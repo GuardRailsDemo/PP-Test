@@ -1,6 +1,6 @@
 ---
 - name: Run Docker Compose
-  hosts: servers
+  hosts: 54.179.62.102
   become: yes
   tasks:
     - name: Change to project directory
