@@ -4,7 +4,7 @@
   become: yes
   tasks:
     - name: Run docker-compose up
-      command: docker-compose up 
+      command: sudo docker-compose up 
       args:
         chdir: /home/ubuntu/easyTravel-Docker
 
