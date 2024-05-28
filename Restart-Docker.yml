@@ -7,7 +7,6 @@
       service:
         name: docker
         state: restarted
-    - name: Start Docker
-      service:
-        name: docker
-        state: started
+    - name: Run docker-compose up
+      command: docker-compose up -d
+
