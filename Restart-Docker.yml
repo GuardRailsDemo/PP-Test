@@ -1,11 +1,11 @@
 ---
-- name: Restart Docker Service
+- name: Run Docker Compose
   hosts: all
   become: yes
   tasks:
-    - name: Restart Docker
-      service:
-        name: docker
-        state: restarted
-     - name: Run docker-compose up
-      command: sudo docker-compose up 
+    - name: Run docker-compose up
+      command: docker-compose up -d
+      args:
+        chdir: /home/ubuntu/easyTravel-Docker
+
+
